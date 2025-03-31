@@ -8,18 +8,9 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 
 def sum_of_two_smallest_numbers(start: list) -> int:
 
-#    start = [1, 10, 100, 120, 130, 140, 2]
-#    spisok_new = []
-
-#    for char in start:
-#       if char < 0 or isinstance(char, int) == False:
-#            return "Числа в списке должны быть положительными и целыми!"
-#       else:
-#            # spisok_new.append(char) #None - ?
-#           spisok_sorted = sorted(spisok_new.append(char))
-#
-#            return spisok_sorted
-    sorted_start = sorted(start, reverse=False)
+    sorted_start = sorted(start)
     sum_of_nums = sorted_start[0] + sorted_start[1]
+
+    return sum_of_nums
 
 print(sum_of_two_smallest_numbers([1, 10, 100, 120, 130, 140, 2]))
